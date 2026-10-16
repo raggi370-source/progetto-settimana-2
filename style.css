@@ -40,7 +40,7 @@ button {
 
   width: 100%;
   height: 60px;
-  background-color: rgb(0, 0, 121);
+  background-color:#131921;
   color: rgb(218, 167, 0);
   padding: 0 20px;
 }
@@ -54,9 +54,10 @@ button {
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
   color: rgb(218, 167, 0);
+
 }
 
 
@@ -80,7 +81,7 @@ button {
   outline: none;
 }
 
-
+/*bootone cerca*/
 .cerca button {
   background-color: rgb(218, 167, 0);
   font-size: 14px;
@@ -88,9 +89,13 @@ button {
   color: black;
   border-radius: 0 4px 4px 0;
   transition: opacity 0.2s;
+  width: 80px;
+  transition: backgraund-color 0.2 ease ;
 }
 
-
+.cerca button:hover{
+  background-color: rgb(186, 143, 1) ;
+}
 
 
 
@@ -119,7 +124,7 @@ button {
   background-color: #1a2432;
  
   color: #ffffff !important;
-  
+
   padding: 8px 14px;
   
   border-radius: 6px;
@@ -168,16 +173,23 @@ button {
   width: 200px;
   height: 180px;
   background-color: #ffffff;
-  border: 1px solid #1a2432;
+  border: 1px solid #232F3E;
   border-radius: 8px;
   padding: 0 0 10px 0;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+.eletronia2:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .eletronica {
   width: 100%;
   height: 120px;
-  background-color: #1a2432;
+  background-color: #232F3E;
   border-radius: 6px 0px 0px 0px;
   margin-bottom: 10px;
   display: flex;
@@ -191,6 +203,13 @@ button {
   color: rgb(75, 46, 216);
   font-size: small;
   margin: 4%;
+  transition: color 0.3s ease;
+}
+
+/*illuminazione scopri di piu*/
+.eletronia2:hover .linkcat {
+  color: #FF9900; 
+  text-shadow: 0 0 5px rgba(255, 153, 0, 0.4);
 }
 
 .ciao {
@@ -213,29 +232,45 @@ button {
   width: 200px;
   height: 180px;
   background-color: #ffffff;
-  border: 1px solid #1a2432;
+  border: 1px solid #000000;
   border-radius: 8px;
   padding: 0 0 10px 0;
   overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .libri2 {
   width: 100%;
   height: 120px;
-  background-color: #f0a400;
+  background-color: #C45500;
   border-radius: 6px 0px 0px 0px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 
 }
+
+
+.libri:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
 
 
 .linkcat {
   color: rgb(75, 46, 216);
   font-size: small;
   margin: 4%;
+  transition: color 0.3s ease;
+}
+/*illuminazione scopri di piu*/
+.libri:hover .linkcat {
+  color: #FF9900; 
+  text-shadow: 0 0 5px rgba(255, 153, 0, 0.4);
 }
 
 .ciao {
@@ -259,16 +294,17 @@ button {
   width: 200px;
   height: 180px;
   background-color: #ffffff;
-  border: 1px solid #1a2432;
+  border: 1px solid #146EB4;
   border-radius: 8px;
   padding: 0 0 10px 0;
   overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .abiti2 {
   width: 100%;
   height: 120px;
-  background-color: #00bee8;
+  background-color:#146EB4;
   border-radius: 6px 0px 0px 0px;
   margin-bottom: 10px;
   display: flex;
@@ -277,11 +313,23 @@ button {
 
 }
 
+.abiti:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
 
 .linkcat {
   color: rgb(75, 46, 216);
   font-size: small;
   margin: 4%;
+  transition: color 0.3s ease;
+}
+/*illuminazione scopri di piu*/
+.abiti:hover .linkcat {
+  color: #FF9900; 
+  text-shadow: 0 0 5px rgba(255, 153, 0, 0.4);
 }
 
 .ciao {
@@ -303,16 +351,18 @@ button {
   width: 200px;
   height: 180px;
   background-color: #ffffff;
-  border: 1px solid #1a2432;
+  border: 1px solid#067D62;
   border-radius: 8px;
   padding: 0 0 10px 0;
   overflow: hidden;
+  transition: transform 0.3s ease;
+  
 }
 
 .casa2 {
   width: 100%;
   height: 120px;
-  background-color: #02bc27;
+  background-color: #067D62;
   border-radius: 6px 0px 0px 0px;
   margin-bottom: 10px;
   display: flex;
@@ -321,12 +371,25 @@ button {
 
 }
 
+.casa:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
 
 .linkcat {
   color: rgb(75, 46, 216);
   font-size: small;
   margin: 4%;
+  transition: color 0.3s ease;
 }
+/*illuminazione scopri di piu*/
+.casa:hover .linkcat {
+  color: #FF9900; 
+  text-shadow: 0 0 5px rgba(255, 153, 0, 0.4);
+}
+
+
 
 .ciao {
   font-weight: bold;
@@ -381,7 +444,7 @@ button {
 }
 
 .btn-carrello {
-  background-color: #ffd814;
+  background-color: #FFD814;
   border: none;
   width: 100%;
   padding: 8px 0;
@@ -389,7 +452,14 @@ button {
   font-size: 13px;
   cursor: pointer;
   margin-top: 10px;
+  transition: backround-color 0.2 ease;
 }
+.btn-carrello:hover{
+  background-color:#f7ca00 ;
+}
+
+
+
 
 .prezzo {
   color: #b12704;
@@ -419,7 +489,7 @@ h5 {
 
 .fondo {
   width: 100%;
-  background-color: #000a59; 
+  background-color:#232F3E; 
   color:white;
 }
 
