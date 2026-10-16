@@ -15,6 +15,112 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const prodotti = [
+   {
+      nome: "Cuffie Wireless",
+      categoria: "Elettronica",
+      prezzo: 89.90,
+      rating: 4,
+      immagine: "cuffie.jpg",
+      disponibile: true
+   },
+
+   {
+      nome: "Tablet 10 pollici",
+      categoria: "Elettronica",
+      prezzo: 199.00, rating: 5,
+      immagine: "tablet.jpg",
+      disponibile: true
+   },
+
+   {
+      nome: "Il romanzo dell'anno",
+      categoria: "Libri",
+      prezzo: 14.90, rating: 4,
+      immagine: "libro.jpg",
+      disponibile: true
+   },
+
+   {
+      nome: "Zaino da viaggio 30L",
+      categoria: "Abbigliamento",
+      prezzo: 49.99,
+      rating: 4,
+      immagine: "zaino.jpg",
+      disponibile: true
+   },
+   {
+      nome: "Smartphone 5G",
+      categoria: "Elettronica",
+      prezzo: 299.99,
+      rating: 5,
+      immagine: "telefono.jpg",
+      disponibile: false
+   },
+
+   {
+      nome: "Mouse Gaming",
+      categoria: "Elettronica",
+      prezzo: 24.50,
+      rating: 4,
+      immagine: "mouse.jpg",
+      disponibile: true
+   },
+
+   {
+      nome: "Tastiera Meccanica",
+      categoria: "Elettronica",
+      prezzo: 59.90,
+      rating: 3,
+      immagine: "tastiera.jpg",
+      disponibile: true
+   },
+
+   {
+      nome: "Manuale HTML/CSS",
+      categoria: "Libri",
+      prezzo: 29.00,
+      rating: 5,
+      immagine: "libro-code.jpg",
+      disponibile: true
+   },
+
+   {
+      nome: "Orologio Smartwatch",
+      categoria: "Elettronica",
+      prezzo: 129.00,
+      rating: 4,
+      immagine: "orologio.jpg",
+      disponibile: true
+   },
+
+   {
+      nome: "Felpa con cappuccio",
+      categoria: "Abbigliamento",
+      prezzo: 39.99,
+      rating: 4,
+      immagine: "felpa.jpg",
+      disponibile: true
+   },
+
+   {
+      nome: "Borraccia Termica",
+      categoria: "Casa",
+      prezzo: 18.50,
+      rating: 5,
+      immagine: "borraccia.jpg",
+      disponibile: false
+   },
+   {
+      nome: "Cuffie In-Ear",
+      categoria: "Elettronica",
+      prezzo: 19.99,
+      rating: 3,
+      immagine: "auricolari.jpg",
+      disponibile: true
+   }
+];
+
 
 
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
@@ -23,7 +129,16 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function formattaPrezzo(prezzo) {
+   const prezzoFormattato = prezzo.toFixed(2).replace('.', ',');
+   return `€ ${prezzoFormattato}`;
+}/*toFixed Prende il numero di partenza e lo blocca 
+a esattamente due cifre decimali dopo il punto.*/
 
+
+for (let i = 0; i < prodotti.length; i++) {
+   console.log(formattaPrezzo(prodotti[i].prezzo));
+}
 
 /* VERSIONE INTERMEDIA — stelline(rating)
    Funzione che ritorna una stringa di stelline piene/vuote.
@@ -32,18 +147,67 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function stelline(rating) {
+   if (rating === 5) return "★★★★★";
+   if (rating === 4) return "★★★★☆";
+   if (rating === 3) return "★★★☆☆";
+   if (rating === 2) return "★★☆☆☆";
+   if (rating === 1) return "★☆☆☆☆";
+}
+
+
+for (let i = 0; i < prodotti.length; i++) {
+   let voto = prodotti[i].rating;
+   console.log(prodotti[i].nome + ": " + stelline(voto));
+}
+
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function filtraPerCategoria(categoriaCercata) {
+   let listaFiltrata = []; 
+   for (let i = 0; i < prodotti.length; i++) {
+      
+      if (prodotti[i].categoria === categoriaCercata) {
+         listaFiltrata.push(prodotti[i]); 
+      }
+   }
+
+   return listaFiltrata; 
+}
+
+console.log(filtraPerCategoria("Elettronica"));
+
+
 
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+
+function filtrato(i) {
+   return (prodotti[i].nome)
+}
+
+
+for (let i = 0; i < prodotti.length; i++) {
+   if (prodotti[i].rating >= 3) {
+      console.log(filtrato(i))
+
+   }
+}
+
+
+
+
+
+
 
 /* --------------------------------------------------------------
 
