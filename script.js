@@ -179,6 +179,7 @@ function filtraPerCategoria(categoriaCercata) {
    return listaFiltrata; 
 }
 
+
 console.log(filtraPerCategoria("Elettronica"));
 
 

@@ -173,7 +173,7 @@ button {
   width: 200px;
   height: 180px;
   background-color: #ffffff;
-  border: 1px solid #232F3E;
+  border: 1px solid #000000;
   border-radius: 8px;
   padding: 0 0 10px 0;
   overflow: hidden;
@@ -294,7 +294,7 @@ button {
   width: 200px;
   height: 180px;
   background-color: #ffffff;
-  border: 1px solid #146EB4;
+  border: 1px solid #000000;
   border-radius: 8px;
   padding: 0 0 10px 0;
   overflow: hidden;
@@ -351,7 +351,7 @@ button {
   width: 200px;
   height: 180px;
   background-color: #ffffff;
-  border: 1px solid#067D62;
+  border: 1px solid#000000;
   border-radius: 8px;
   padding: 0 0 10px 0;
   overflow: hidden;
